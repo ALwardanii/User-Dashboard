@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>User DashBoard</title>
+</head>
+<body>
+    <div class="Main">
+        <div class="UserImage">
+            <img src="user-main.svg">
+            <span>Ahmed Ali</span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li id="User-Profile-list">
+                    <a href="#"  >
+                        <span class="icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">User Profile</span>
+                    </a>
+                </li>
+                
+                <li id="Favourite-list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="bookmark-outline"></ion-icon>
+                        </span>
+                        <span class="title">Favourite</span>
+                    </a>
+                </li>
+                <li id="Reviews-list">
+                    <a href="#" >
+                        <span class="icon">
+                            <ion-icon name="star-outline"></ion-icon>
+                        </span>
+                        <span class="title">Reviews</span>
+                    </a>
+                </li>
+                <li id="Posts-list">
+                    <a href="#" >
+                        <span class="icon">
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Posts</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+
+
+        
+        <div  class="Favourite hidden" id="Favourite-content">
+            <div class="movie-favourite">
+                <h2>Movie</h2>
+                <ion-icon name="heart-circle" id="heart-circle"></ion-icon>
+                <div class="movie-card-1">
+                    <ion-icon name="videocam" id="icon-movie-favourite"></ion-icon>
+                    <span class="Heading">The Avengers</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="movie-card-2">
+                    <ion-icon name="videocam" id="icon-movie-favourite"></ion-icon>
+                    <span class="Heading">The Dark Knight</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="movie-card-3">
+                    <ion-icon name="videocam" id="icon-movie-favourite"></ion-icon>
+                    <span class="Heading">Mad Max: Fury Road</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="movie-card-4">
+                    <ion-icon name="videocam" id="icon-movie-favourite"></ion-icon>
+                    <span class="Heading">John Wick</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="movie-card-5">
+                    <ion-icon name="videocam" id="icon-movie-favourite" ></ion-icon>
+                    <span class="Heading">The Hangover</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="movie-card-6">
+                    <ion-icon name="videocam" id="icon-movie-favourite"></ion-icon>
+                    <span class="Heading">Superbad</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="movie-card-7">
+                    <ion-icon name="videocam" id="icon-movie-favourite"></ion-icon>
+                    <span class="Heading">Bridesmaids</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                
+            </div>
+            <div class="book-favourite">
+                <h2>Book</h2>
+                <ion-icon name="heart-circle" id="heart-circle"></ion-icon>
+                <div class="book-card-1">
+                    <ion-icon name="book-outline" id="icon-book-favourite" ></ion-icon>
+                    <span class="Heading">The Alchemist</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="book-card-2">
+                    <ion-icon name="book-outline" id="icon-book-favourite"></ion-icon>
+                    <span class="Heading">The Giver</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="book-card-3">
+                    <ion-icon name="book-outline" id="icon-book-favourite"></ion-icon>
+                    <span class="Heading">Dorian Gray</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="book-card-4">
+                    <ion-icon name="book-outline" id="icon-book-favourite"></ion-icon>
+                    <span class="Heading">Sapiens</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="book-card-5">
+                    <ion-icon name="book-outline" id="icon-book-favourite"></ion-icon>
+                    <span class="Heading">Power of Now</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="book-card-6">
+                    <ion-icon name="book-outline" id="icon-book-favourite"></ion-icon>
+                    <span class="Heading">Rich Dad Poor Dad</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="book-card-7">
+                    <ion-icon name="book-outline" id="icon-book-favourite"></ion-icon>
+                    <span class="Heading">The Handmaid</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+            </div> 
+
+            <div class="Restaurant-favourite">
+                <h2>Restaurant</h2>
+                <ion-icon name="heart-circle" id="heart-circle"></ion-icon>
+                <div class="Restaurant-card-1">
+                    <ion-icon name="fast-food-outline" id="icon-Restaurant-favourite"></ion-icon>
+                    <span class="Heading">El Taco Loco</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="Restaurant-card-2">
+                    <ion-icon name="fast-food-outline" id="icon-Restaurant-favourite"></ion-icon>
+                    <span class="Heading">Chili Verde</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>    
+                </div>
+                <div class="Restaurant-card-3">
+                    <ion-icon name="fast-food-outline" id="icon-Restaurant-favourite"></ion-icon>
+                    <span class="Heading">Golden Wok</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="Restaurant-card-4">
+                    <ion-icon name="fast-food-outline" id="icon-Restaurant-favourite"></ion-icon>
+                    <span class="Heading">Rice Bowl</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="Restaurant-card-5">
+                    <ion-icon name="fast-food-outline" id="icon-Restaurant-favourite"></ion-icon>
+                    <span class="Heading">Comfort Food Co.</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="Restaurant-card-6">
+                    <ion-icon name="fast-food-outline" id="icon-Restaurant-favourite"></ion-icon>
+                    <span class="Heading">The Gourmet Room</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+                <div class="Restaurant-card-7">
+                    <ion-icon name="fast-food-outline" id="icon-Restaurant-favourite"></ion-icon>
+                    <span class="Heading">The Burger</span>
+                    <ion-icon name="bookmark-outline" id="icon-favourite"></ion-icon>
+                </div>
+            </div>
+            
+        </div>
+        <div  class="Reviews hidden" id="Reviews-content">
+            <div class="Review-Cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Flavor Fusion</span>
+                            <p>FlavorFusion offers a delightful dining experience with its diverse menu and cozy ambiance. The food is flavorful and well-presented, and the service is top-notch. Highly recommend for anyone looking for a memorable meal!
+                                                </p>
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>BlissBrew</span>
+                            <p>BlissBrew Cafe is a charming spot offering delicious coffee, teas, and pastries in a cozy atmosphere. With friendly service and a relaxing ambiance, it's the perfect place to unwind and enjoy a moment of bliss.</p>
+                            <ion-icon name="cafe-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Serenity</span>
+                            <p>Serenity Valley is a picturesque destination surrounded by pristine landscapes and tranquil vibes. With its scenic beauty and peaceful ambiance, it's the perfect escape from the hustle and bustle of city life. </p>
+                            <ion-icon name="airplane-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>PixelPlay</span>
+                            <p>PixelPlay offers a fun gaming experience with 
+                                cozy atmosphere and tasty snacks. Ideal for gamers looking to relax and play.                            </p>
+                                <ion-icon name="game-controller-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon5" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Serenity</span>
+                            <p>Serenity Valley is a picturesque destination surrounded by pristine landscapes and tranquil vibes. With its scenic beauty and peaceful ambiance, it's the perfect escape from the hustle and bustle of city life. </p>
+                            <ion-icon name="airplane-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Flavor Fusion</span>
+                            <p>FlavorFusion offers a delightful dining experience with its diverse menu and cozy ambiance. The food is flavorful and well-presented, and the service is top-notch. Highly recommend for anyone looking for a memorable meal!
+                                                </p>
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>PixelPlay</span>
+                            <p>PixelPlay offers a fun gaming experience with 
+                                cozy atmosphere and tasty snacks. Ideal for gamers looking to relax and play.                            </p>
+                                <ion-icon name="game-controller-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon5" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>BlissBrew</span>
+                            <p>BlissBrew Cafe is a charming spot offering delicious coffee, teas, and pastries in a cozy atmosphere. With friendly service and a relaxing ambiance, it's the perfect place to unwind and enjoy a moment of bliss.</p>
+                            <ion-icon name="cafe-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Flavor Fusion</span>
+                            <p>FlavorFusion offers a delightful dining experience with its diverse menu and cozy ambiance. The food is flavorful and well-presented, and the service is top-notch. Highly recommend for anyone looking for a memorable meal!
+                                                </p>
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>BlissBrew</span>
+                            <p>BlissBrew Cafe is a charming spot offering delicious coffee, teas, and pastries in a cozy atmosphere. With friendly service and a relaxing ambiance, it's the perfect place to unwind and enjoy a moment of bliss.</p>
+                            <ion-icon name="cafe-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Flavor Fusion</span>
+                            <p>FlavorFusion offers a delightful dining experience with its diverse menu and cozy ambiance. The food is flavorful and well-presented, and the service is top-notch. Highly recommend for anyone looking for a memorable meal!
+                                                </p>
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>PixelPlay</span>
+                            <p>PixelPlay offers a fun gaming experience with 
+                                cozy atmosphere and tasty snacks. Ideal for gamers looking to relax and play.                            </p>
+                                <ion-icon name="game-controller-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon5" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Flavor Fusion</span>
+                            <p>FlavorFusion offers a delightful dining experience with its diverse menu and cozy ambiance. The food is flavorful and well-presented, and the service is top-notch. Highly recommend for anyone looking for a memorable meal!
+                                                </p>
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>PixelPlay</span>
+                            <p>PixelPlay offers a fun gaming experience with 
+                                cozy atmosphere and tasty snacks. Ideal for gamers looking to relax and play.                            </p>
+                                <ion-icon name="game-controller-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon5" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>BlissBrew</span>
+                            <p>BlissBrew Cafe is a charming spot offering delicious coffee, teas, and pastries in a cozy atmosphere. With friendly service and a relaxing ambiance, it's the perfect place to unwind and enjoy a moment of bliss.</p>
+                            <ion-icon name="cafe-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <span>Flavor Fusion</span>
+                            <p>FlavorFusion offers a delightful dining experience with its diverse menu and cozy ambiance. The food is flavorful and well-presented, and the service is top-notch. Highly recommend for anyone looking for a memorable meal!
+                                                </p>
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                            <img src="reviews-icon.svg" class="Review-Icon" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon2" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon3" width="30px" height="30px">
+                            <img src="reviews-icon.svg" class="Review-Icon4" width="30px" height="30px">
+                        </div>
+                        <div class="card-back">
+                            <span>Go To Page</span>
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        </div>
+        <div  class="Posts hidden" id="Posts-content">
+            <div class="wrapper">
+                <h3>Post Review</h3>
+                <form action="">
+                    <div class="rating">
+                        <input type="number" name="rating" hidden>
+                        <i class='bx bx-star star'></i>
+                        <i class='bx bx-star star' ></i>
+                        <i class='bx bx-star star' ></i>
+                        <i class='bx bx-star star' ></i>
+                        <i class='bx bx-star star' ></i>
+                    </div>
+                    
+                    <select id="Place-review">
+                        <option value="Flavor Fusion">Flavor Fusion</option>
+                            <option value="PixelPlay">PixelPlay</option>
+                                <option value="BlissBrew">BlissBrew</option>
+                    </select>
+                    <textarea name="review" cols="30" rows="5" placeholder="Write Review"></textarea>
+                    <div class="btn-group">
+                        <button type="submit" class="btn submit">Post Review</button>
+                        <button class="btn cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div  class="User-Profile hidden" id="User-Profile-content" >
+            <div class="Analytics-User">
+                <div class="Total-Reviews">
+                    <span class="Analytics-Heading">Total Reviews</span>
+                    <ion-icon name="star-outline" class="icon-Analytics"></ion-icon>
+                    <span class="Number-Analyics">1358</span>
+                </div>
+                <div class="Total-Post">
+                    <span class="Analytics-Heading">Toatal Post</span>
+                    <ion-icon name="duplicate-outline" class="icon-Analytics"></ion-icon>
+                    <span class="Number-Analyics">518</span>
+                </div>
+                <div class="Total-Comment">
+                    <span class="Analytics-Heading">Total Comment</span>
+                    <ion-icon name="chatbubble-ellipses-outline" class="icon-Analytics"></ion-icon>
+                    <span class="Number-Analyics">1989</span>
+                </div>
+            </div>
+            <div class="Table-Reviews">
+                <table>
+                    <tr>
+                     <th class="Post-Id">Post Id</th>
+                     <th>Review Content</th>
+                     <th>Rating</th>
+                     <th class="Date">Date</th>
+                     <tr>
+                        <td>1</td>
+                        <td>This is a great post! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor.</td>
+                        <td>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                        </td>
+                        <td>2023-02-20</td>
+                       </tr>
+                       <tr>
+                        <td>2</td>
+                        <td>I like this post! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor.</td>
+                        <td>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                        </td>
+                        <td>2023-02-19</td>
+                       </tr>
+                       <tr>
+                        <td>3</td>
+                        <td>This post is okay. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor.</td>
+                        <td><i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i></td>
+                        <td>2023-02-18</td>
+                       </tr>
+                       <tr>
+                        <td>4</td>
+                        <td>I love this post! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor.</td>
+                        <td><i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i></td>
+                        <td>2023-02-17</td>
+                       </tr>
+                       <tr>
+                        <td>5</td>
+                        <td>This post is amazing! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor.</td>
+                        <td><i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i>
+                            <i class='bx bxs-star star' ></i></td>
+                        <td>2023-02-16</td>
+                       </tr>
+                   </table>
+            </div>
+        </div>
+        
+    </div>
+    <!-- install ionicon because used icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,1006 @@
+/* Insert Fonts with Google*/
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+.visiblty {
+    opacity: 1;
+    position: block;
+}
+.nav {
+    position: fixed;
+    height: 100vh;
+    width: 20%;
+    background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+    
+}
+.UserImage {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    top: calc(5%);
+    left: calc(5%);
+    z-index: 1000;
+}
+.UserImage span {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*
+.ButtonNav {
+    position: absolute;
+    display : flex;
+    flex-direction: row;
+    background-color: #2d3a47;
+    border-width: 0;
+    font-size: 20px;
+    border-left: 2px solid white;
+    text-align: center;
+    top: calc(35%);
+    left: calc(5%);
+    height: 6.5%;
+    width: 95%;
+    border-radius: 40px 0px 0px 40px  ;
+    padding: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 40px;
+}
+
+.ButtonNav img {
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+.ButtonNav:hover 
+ {
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: white;
+    box-shadow: 35px 35px 0 10px white;
+        
+}
+.ButtonNav:hover + #UserProfile span{
+        color: #1585f5;
+}
+#Notification {
+    top: calc(51%);
+}
+#Favourite {
+    top: calc(59%);
+}
+#Reviews {
+    top: calc(67%);
+}
+#Settings {
+    top: calc(43%);
+}
+#Posts {
+    top: calc(75%);
+}
+*/
+.nav ul {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+}
+
+.nav ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+/* .nav ul li:hover {
+    background-color: white;
+} */
+
+.nav ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* .nav ul li:hover a {
+    color: #181f26;
+} */
+.nav ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+.nav ul li a .icon ion-icon {
+    font-size: 1.75rem;
+}
+.nav ul li a .title {
+    position: relative;
+    display: block;
+    
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    
+}
+
+/* .nav ul li:hover a::before {
+    content: '';
+    position: absolute;
+    right: 40px;
+    top: -83%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px white;
+} */
+.active-list::before {
+    content: '';
+    position: absolute;
+    right: 40px;
+    top: -83%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px white;
+}
+
+/* .nav ul li:hover a::after {
+    content: '';
+    position: absolute;
+    right: 40px;
+    bottom: -83%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px white;
+} */
+.active-list::after {
+    content: '';
+    position: absolute;
+    right: 40px;
+    bottom: -83%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px white;
+}
+.active-list {
+    background-color: white;
+}
+
+.Settings{
+    left: 22%;
+    top: 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+} 
+/* .Settings label {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:  #181f26 ;
+    opacity: 0.9;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+} */
+.User-Profile{
+    left: 24.5%;
+    top: 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+}
+.Notifications {
+    left: 22%;
+    top: 3%;
+    position: absolute;
+    transition: all 0.5s linear;
+}
+
+.Reviews {
+    left: 22%;
+    top: 1.5%;
+    position: absolute;
+    width: 76%;
+    height: 98%;
+    transition: all 0.5s linear;
+}
+.Review-Cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    
+    box-sizing: content-box;
+    padding-top: 20px;
+}
+.Review-Cards .card {
+    border-radius: 25px;
+    width: 342px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+    
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease ;
+    transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+    transform: rotateY(-180deg);
+}
+.card-front , .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    border-radius: 25px;
+}
+.card-back span {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    left: 28%;
+    top: 35%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(36, 45, 57);
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+}
+.card-back ion-icon {
+    font-size: 3.75rem;
+    color: white;
+    position: absolute;
+    left: 42%;
+    top: 55%;
+}
+.Review-Cards .card .card-front ion-icon {
+    font-size: 5.75rem;
+    color: white;
+    top: 10%;
+    left: 10%;
+    position: absolute;
+}
+.Review-Cards .card .card-back ion-icon {
+    cursor: pointer;
+}
+.Review-Cards .card .card-front span {
+    font-size: 1.95rem;
+    color: white;
+    top: 21%;
+    left: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+}
+.Review-Cards .card .card-front p {
+    color: white;
+    top: 40%;
+    left: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+}
+
+.Review-Icon  {
+    top: 84%;
+    left: 87%;
+    position: absolute;
+    opacity: 0.85;
+}
+.Review-Icon2  {
+    top: 84%;
+    left: 77%;
+    position: absolute;
+    opacity: 0.85;
+}
+.Review-Icon3  {
+    top: 84%;
+    left: 67%;
+    position: absolute;
+    opacity: 0.85;
+}
+.Review-Icon4  {
+    top: 84%;
+    left: 57%;
+    position: absolute;
+    opacity: 0.85;
+}
+.Review-Icon5  {
+    top: 84%;
+    left: 47%;
+    position: absolute;
+    opacity: 0.85;
+}
+
+.Posts {
+    left: 39%;
+    top: 13%;
+    
+    position: absolute;
+    transition: all 0.5s ease;
+}
+.wrapper {
+    background: white;
+    padding: 2rem;
+    width: 700px;
+    height: 500px;
+    border-radius: 1.5rem;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.05);
+}
+.wrapper h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Poppins';
+    margin-bottom: 0.5rem;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 1.7rem;
+    color: #FFBD13;
+    margin-bottom: 2rem;
+}
+.rating .star {
+    cursor: pointer;
+}
+.rating .star:hover {
+    transform: scale(1.3);
+}
+select {
+    width: 100%;
+    background: #F5F5F5;
+    padding: .5rem;
+    padding-right: 3rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: 11px;
+}
+
+textarea {
+    width: 100%;
+    background: #F5F5F5;
+    padding: .5rem;
+    padding-bottom: 10rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: 17px;
+}
+.btn-group {
+    display: flex;
+    grid-gap : .5rem;
+    justify-content: center;
+}
+.btn-group .btn{
+    padding: 0.75rem 1rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn-group .btn.submit{
+   background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+   color: white;
+}
+.btn-group .btn.submit:hover{
+    background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+    color: white;
+ }
+
+.Favourite {
+    left: 21%;
+    top: 3%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+.Favourite .movie-favourite ,.book-favourite , .Restaurant-favourite {
+    width: 479px;
+    height: 860px;
+    background: #F5F5F5;
+    border-radius: 25px;
+    margin-left: 5px;
+    
+}
+.Favourite div ion-icon {
+    position: absolute;
+    font-size: 2.5rem;
+    top: 94%;
+}
+.Favourite .movie-favourite ion-icon {
+    position: absolute;
+    left: 29%;
+}
+.Favourite .book-favourite ion-icon {
+    position: absolute;
+    left: 63%;
+}
+.Favourite .Restaurant-favourite ion-icon {
+    position: absolute;
+    left: 96.8%;
+}
+.Favourite div h2 {
+    font-family: 'Poppins';
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.movie-card-1 , .movie-card-2 , .movie-card-3 , .movie-card-4 , .movie-card-5  , .movie-card-6 , .movie-card-7  {
+    position: absolute;
+    width: 440px;
+    height: 80px;
+    top: 11%;
+    left: 1.7%;
+    border-radius: 20px;
+    background: white;
+}
+
+.movie-card-2 {
+    top: 22%;
+}
+.movie-card-3 {
+    top: 33%;
+}
+.movie-card-4 {
+    top: 44%;
+}
+.movie-card-5 {
+    top: 55%;
+}
+.movie-card-6 {
+    top: 66%;
+}
+.movie-card-7 {
+    top: 77%;
+}
+#icon-movie-favourite {
+    top: 19%;
+    left: 5%;
+    font-size: 3rem;
+}
+.movie-card-1 , .movie-card-2 , .movie-card-3 , .movie-card-4 , .movie-card-5  , .movie-card-6 , .movie-card-7 span {
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+.Heading {
+    position: absolute;
+    left: 21%;
+    top: 20%;
+}
+#icon-favourite {
+    font-size: 2rem;
+    left: 91%;
+    top: 45%;
+    color: #FFBD13;
+}
+#heart-circle {
+    color: #FFBD13;
+}
+.movie-card-1:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.movie-card-1:hover #icon-movie-favourite  {
+    color: white;
+}
+.movie-card-1:hover .Heading  {
+    color: white;
+
+}
+.movie-card-1:hover #icon-favourite  {
+    color: white;
+
+}
+.movie-card-2:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.movie-card-2:hover #icon-movie-favourite  {
+    color: white;
+}
+.movie-card-2:hover .Heading  {
+    color: white;
+
+}
+.movie-card-2:hover #icon-favourite  {
+    color: white;
+
+}
+/*card 3*/
+.movie-card-3:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.movie-card-3:hover #icon-movie-favourite  {
+    color: white;
+}
+.movie-card-3:hover .Heading  {
+    color: white;
+
+}
+.movie-card-3:hover #icon-favourite  {
+    color: white;
+
+}
+
+/*card 4*/
+.movie-card-4:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.movie-card-4:hover #icon-movie-favourite  {
+    color: white;
+}
+.movie-card-4:hover .Heading  {
+    color: white;
+
+}
+.movie-card-4:hover #icon-favourite  {
+    color: white;
+
+}
+/*card 5*/
+.movie-card-5:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.movie-card-5:hover #icon-movie-favourite  {
+    color: white;
+}
+.movie-card-5:hover .Heading  {
+    color: white;
+
+}
+.movie-card-5:hover #icon-favourite  {
+    color: white;
+
+}
+/*card 6*/
+.movie-card-6:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.movie-card-6:hover #icon-movie-favourite  {
+    color: white;
+}
+.movie-card-6:hover .Heading  {
+    color: white;
+
+}
+.movie-card-6:hover #icon-favourite  {
+    color: white;
+
+}
+
+.movie-card-7:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.movie-card-7:hover #icon-movie-favourite  {
+    color: white;
+}
+.movie-card-7:hover .Heading  {
+    color: white;
+
+}
+.movie-card-7:hover #icon-favourite  {
+    color: white;
+
+}
+.book-card-1 , .book-card-2 , .book-card-3 , .book-card-4 , .book-card-5  , .book-card-6 , .book-card-7  {
+    position: absolute;
+    width: 440px;
+    height: 80px;
+    top: 11%;
+    left: 35.5%;
+    border-radius: 20px;
+    background: white;
+}
+.book-card-2 {
+    top: 22%;
+}
+.book-card-3 {
+    top: 33%;
+}
+.book-card-4 {
+    top: 44%;
+}
+.book-card-5 {
+    top: 55%;
+}
+.book-card-6 {
+    top: 66%;
+}
+.book-card-7 {
+    top: 77%;
+}
+.book-card-1 , .book-card-2 , .book-card-3 , .book-card-4 , .book-card-5  , .book-card-6 , .book-card-7 span {
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.book-card-1:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.book-card-1:hover #icon-book-favourite  {
+    color: white;
+}
+.book-card-1:hover .Heading  {
+    color: white;
+
+}
+.book-card-1:hover #icon-favourite  {
+    color: white;
+
+}
+.book-card-2:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.book-card-2:hover #icon-book-favourite  {
+    color: white;
+}
+.book-card-2:hover .Heading  {
+    color: white;
+
+}
+.book-card-2:hover #icon-favourite  {
+    color: white;
+
+}
+/*card 3*/
+.book-card-3:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.book-card-3:hover #icon-book-favourite  {
+    color: white;
+}
+.book-card-3:hover .Heading  {
+    color: white;
+
+}
+.book-card-3:hover #icon-favourite  {
+    color: white;
+
+}
+
+/*card 4*/
+.book-card-4:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.book-card-4:hover #icon-book-favourite  {
+    color: white;
+}
+.book-card-4:hover .Heading  {
+    color: white;
+
+}
+.book-card-4:hover #icon-favourite  {
+    color: white;
+
+}
+/*card 5*/
+.book-card-5:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.book-card-5:hover #icon-book-favourite  {
+    color: white;
+}
+.book-card-5:hover .Heading  {
+    color: white;
+
+}
+.book-card-5:hover #icon-favourite  {
+    color: white;
+
+}
+/*card 6*/
+.book-card-6:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.book-card-6:hover #icon-book-favourite  {
+    color: white;
+}
+.book-card-6:hover .Heading  {
+    color: white;
+
+}
+.book-card-6:hover #icon-favourite  {
+    color: white;
+
+}
+
+.book-card-7:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.book-card-7:hover #icon-book-favourite  {
+    color: white;
+}
+.book-card-7:hover .Heading  {
+    color: white;
+
+}
+.book-card-7:hover #icon-favourite  {
+    color: white;
+
+}
+#icon-book-favourite {
+    top: 19%;
+    left: 7%;
+    font-size: 3rem;
+}
+
+/*start  */
+.Restaurant-card-1 , .Restaurant-card-2 , .Restaurant-card-3 , .Restaurant-card-4 , .Restaurant-card-5  , .Restaurant-card-6 , .Restaurant-card-7  {
+    position: absolute;
+    width: 440px;
+    height: 80px;
+    top: 11%;
+    left: 69.5%;
+    border-radius: 20px;
+    background: white;
+}
+#icon-Restaurant-favourite {
+    top: 19%;
+    left: 5%;
+    font-size: 3rem;
+}
+.Restaurant-card-2 {
+    top: 22%;
+}
+.Restaurant-card-3 {
+    top: 33%;
+}
+.Restaurant-card-4 {
+    top: 44%;
+}
+.Restaurant-card-5 {
+    top: 55%;
+}
+.Restaurant-card-6 {
+    top: 66%;
+}
+.Restaurant-card-7 {
+    top: 77%;
+}
+.Restaurant-card-1 , .Restaurant-card-2 , .Restaurant-card-3 , .Restaurant-card-4 , .Restaurant-card-5  , .Restaurant-card-6 , .Restaurant-card-7 span {
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+
+.Restaurant-card-1:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.Restaurant-card-1:hover #icon-Restaurant-favourite  {
+    color: white;
+}
+.Restaurant-card-1:hover .Heading  {
+    color: white;
+
+}
+.Restaurant-card-1:hover #icon-favourite  {
+    color: white;
+
+}
+.Restaurant-card-2:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.Restaurant-card-2:hover #icon-Restaurant-favourite  {
+    color: white;
+}
+.Restaurant-card-2:hover .Heading  {
+    color: white;
+
+}
+.Restaurant-card-2:hover #icon-favourite  {
+    color: white;
+
+}
+/*card 3*/
+.Restaurant-card-3:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.Restaurant-card-3:hover #icon-Restaurant-favourite  {
+    color: white;
+}
+.Restaurant-card-3:hover .Heading  {
+    color: white;
+
+}
+.Restaurant-card-3:hover #icon-favourite  {
+    color: white;
+
+}
+
+/*card 4*/
+.Restaurant-card-4:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.Restaurant-card-4:hover #icon-Restaurant-favourite  {
+    color: white;
+}
+.Restaurant-card-4:hover .Heading  {
+    color: white;
+
+}
+.Restaurant-card-4:hover #icon-favourite  {
+    color: white;
+
+}
+/*card 5*/
+.Restaurant-card-5:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.Restaurant-card-5:hover #icon-Restaurant-favourite  {
+    color: white;
+}
+.Restaurant-card-5:hover .Heading  {
+    color: white;
+
+}
+.Restaurant-card-5:hover #icon-favourite  {
+    color: white;
+
+}
+/*card 6*/
+.Restaurant-card-6:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.Restaurant-card-6:hover #icon-Restaurant-favourite  {
+    color: white;
+}
+.Restaurant-card-6:hover .Heading  {
+    color: white;
+
+}
+.Restaurant-card-6:hover #icon-favourite  {
+    color: white;
+
+}
+
+.Restaurant-card-7:hover  {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
+}
+.Restaurant-card-7:hover #icon-Restaurant-favourite  {
+    color: white;
+}
+.Restaurant-card-7:hover .Heading  {
+    color: white;
+
+}
+.Restaurant-card-7:hover #icon-favourite  {
+    color: white;
+
+}
+/*style User Profile*/
+.Analytics-User {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 80px;
+}
+.Total-Reviews , .Total-Post , .Total-Comment {
+    width: 400px;
+    height: 200px;
+    border-radius: 30px;
+    position: relative;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    
+}
+.Analytics-Heading {
+    font-size: 35px;
+    font-family: 'Poppins';
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+.icon-Analytics {
+    font-size: 5rem;
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    color: white;
+}
+.Number-Analyics {
+    font-size: 55px;
+    font-family: 'Poppins';
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+.Table-Reviews {
+    margin-top: 20px;
+    
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    outline: none;
+    font-family: 'Poppins';
+   }
+
+th, td {
+    
+    padding: 8px;
+    text-align: left;
+    font-family: 'Poppins';
+}
+   
+th {
+    background-color: #485464;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+.Post-Id {
+    border-radius: 10px    0 0 10px;
+}
+.Date {
+    border-radius: 0 10px  10px 0 ;
+}
+/*style User Profile*/
+/* end */
+.hidden {
+    display: none;
+    transition: all 0.5s ease;
+}
